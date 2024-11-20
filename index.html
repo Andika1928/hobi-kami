@@ -3,141 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hobi Kami</title>
-    <style>
-        /* Gaya Dasar */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            color: #fff;
-            background: url('Screenshot 2024-10-11 133858.png') no-repeat center center fixed;
-            background-size: cover;
-        }
-
-        /* Header */
-        header {
-            text-align: center;
-            padding: 80px 20px;
-            background: rgba(0, 0, 0, 0.5);
-            color: #fff;
-        }
-        header h1 {
-            font-size: 3rem;
-            margin: 0;
-        }
-        header p {
-            font-size: 1.2rem;
-            margin-top: 10px;
-        }
-
-        /* Sambutan */
-        .welcome {
-            text-align: center;
-            margin: 40px auto;
-            padding: 20px 30px;
-            background: rgba(255, 255, 255, 0.9);
-            border-radius: 15px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-            max-width: 800px;
-        }
-        .welcome h2 {
-            font-size: 2rem;
-            color: #2c3e50;
-            margin-bottom: 10px;
-        }
-        .welcome p {
-            font-size: 1.1rem;
-            color: #555;
-            line-height: 1.6;
-        }
-
-        /* Daftar Hobi */
-        .hobi-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-            padding: 40px 20px;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .hobi-card {
-            background: rgba(255, 255, 255, 0.9);
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-            text-align: center;
-        }
-        .hobi-card img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-            border-bottom: 3px solid #3498db;
-        }
-        .hobi-card h2 {
-            margin: 15px 0 5px;
-            font-size: 1.4rem;
-            color: #2c3e50;
-        }
-        .hobi-card p {
-            padding: 0 15px 15px;
-            font-size: 1rem;
-            color: #555;
-        }
-
-        /* Footer */
-        footer {
-            text-align: center;
-            padding: 20px;
-            background: rgba(0, 0, 0, 0.7);
-            color: #fff;
-        }
-        footer p {
-            margin: 0;
-            font-size: 1rem;
-        }
-        footer p a {
-            color: #3498db;
-            text-decoration: none;
-        }
-        footer p a:hover {
-            text-decoration: underline;
-        }
-    </style>
+    <title>Profil Tim</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-    <!-- Sambutan -->
-    <section class="welcome">
-        <h2>Selamat Datang!</h2>
-        <p>Halo! Kami adalah tim kreatif yang memiliki hobi unik. Kami senang berbagi inspirasi dan cerita tentang hal-hal yang kami sukai. Selamat menikmati!</p>
-    </section>
-
-    <!-- Daftar Anggota -->
-    <section class="hobi-container">
-        <div class="hobi-card">
-            <img src="WhatsApp Image 2024-11-15 at 21.58.18_4f66584b.jpg" alt="Foto Orang 1">
-            <h2>Andika</h2>
-            <p><strong>Hobi:</strong> Bermain Gitar</p>
-            <p>Mengiringi irama musik yang menenangkan jiwa.</p>
+    <header>
+        <h1>Anggota Kelompok</h1>
+        <p>Kenali hobi anggota kelompok kami!</p>
+    </header>
+    <main>
+        <div class="slider">
+            <!-- Slide 1 -->
+            <div class="slide active">
+                <img src="WhatsApp Image 2024-11-15 at 21.58.18_4f66584b.jpg" alt="Foto John Doe">
+                <h2>Nama: Andika</h2>
+                <p>HOBI: Bermain gitar</p>
+                <p>Mengiring irama musik yang menenangkan jiwa.</p>
+            </div>
+            <!-- Slide 2 -->
+            <div class="slide">
+                <img src="WhatsApp Image 2024-11-15 at 21.47.59_a9b2a85d.jpg" alt="Foto Jane Smith">
+                <h2>Nama: Darrely</h2>
+                <p>HOBI: Airsoft</p>
+                <p>Bermain replika senjata api.</p>
+            </div>
+            <!-- Slide 3 -->
+            <div class="slide">
+                <img src="WhatsApp Image 2024-11-15 at 21.33.52_b1528053.jpg" alt="Foto Alice Brown">
+                <h2>Nama: Dani</h2>
+                <p>HOBI: Touring</p>
+                <p>Menikmati perjalanan jauh bersama teman.</p>
+            </div>
         </div>
-        <div class="hobi-card">
-            <img src="WhatsApp Image 2024-11-15 at 21.33.34_43fa27bc.jpg" alt="Foto Orang 2">
-            <h2>Dani</h2>
-            <p><strong>Hobi:</strong> Touring</p>
-            <p>menikmati perjalanan jauh dan bersama teman-teman.</p>
+        <div class="controls">
+            <button id="prev">Sebelumnya</button>
+            <button id="next">Berikutnya</button>
         </div>
-        <div class="hobi-card">
-            <img src="WhatsApp Image 2024-11-15 at 21.47.41_04299601.jpg" alt="Foto Orang 3">
-            <h2>Darrely</h2>
-            <p><strong>Hobi:</strong> Berlatih Airsoftgun</p>
-            <p>Melatih diri dalam menggunakan senjata.</p>
-        </div>
-    </section>
-
-
+    </main>
+    <footer>
+        <p> TERIMAKASIH.</p>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
-
-
